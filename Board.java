@@ -18,7 +18,7 @@ public class Board extends JPanel implements ActionListener, KeyListener {
     private static final long serialVersionUID = 490905409104883233L;
 
     // keep a reference to the timer object that triggers actionPerformed() in
-    // case we need access to it in another method
+   
     private Timer timer;
     // objects that appear on the game board
     private Player player;
@@ -42,10 +42,9 @@ public class Board extends JPanel implements ActionListener, KeyListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         // this method is called by the timer every DELAY ms.
-        // use this space to update the state of your game or animation
-        // before the graphics are redrawn.
 
-        // prevent the player from disappearing off the board
+
+
         player.tick();
 
         // give the player points for collecting coins
@@ -60,10 +59,7 @@ public class Board extends JPanel implements ActionListener, KeyListener {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         // when calling g.drawImage() we can use "this" for the ImageObserver
-        // because Component implements the ImageObserver interface, and JPanel
-        // extends from Component. So "this" Board instance, as a Component, can
-        // react to imageUpdate() events triggered by g.drawImage()
-
+       
         // draw our graphics.
         drawBackground(g);
         drawScore(g);
@@ -148,8 +144,7 @@ public class Board extends JPanel implements ActionListener, KeyListener {
         Random rand = new Random();
 
         // create the given number of coins in random positions on the board.
-        // note that there is not check here to prevent two coins from occupying the same
-        // spot, nor to prevent coins from spawning in the same spot as the player
+
         for (int i = 0; i < NUM_COINS; i++) {
             int coinX = rand.nextInt(COLUMNS);
             int coinY = rand.nextInt(ROWS);
