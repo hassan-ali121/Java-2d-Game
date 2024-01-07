@@ -16,13 +16,18 @@ Welcome to "Can't Stop, Won't Stop, GameStop" – an engaging Java-based game wh
 
 ## Screenshots
 
-Include screenshots or animated GIFs showcasing the gameplay or important features of your game.
+![image](https://github.com/hassan-ali121/Java-2d-Game/assets/110232196/1535df61-43c2-4d26-aeb5-466106c0ba83)
+
+If player collects the one coin it adds up to $100
+![image](https://github.com/hassan-ali121/Java-2d-Game/assets/110232196/e1acdbe0-dd74-4909-be20-c534e6a28309)
+
+
 
 ## Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/hassan-ali121/Java-2d-Game.git
 
 
